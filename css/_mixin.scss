@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@mixin container($max-width: 1100px) {
+    padding: 0 16px;
+    margin: auto;
+    max-width: $max-width;
+}
+
+@mixin flex($flex-direction: row , $space: space-between){
+    @media(min-width: 768px){
+        display: flex;
+        flex-direction: $flex-direction;
+        justify-content: $space;
+    }
+}
+
+@mixin background(){
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin bg-color($color: white){
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: -1;
+        background-color: $color;
+    }
+}
+
+@mixin center(){
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@mixin fadeUp($move: 5rem,$transition: 1s all){
+    opacity: 0;
+    transform: translateY($move);
+    transition: $transition;
+    &.on{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@mixin fade($transition: 1s all){
+    opacity: 0;
+    transition: $transition;
+    &.on{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,169 @@
+@charset "UTF-8";
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: .1em;
+  color: black;
+  background-color: white;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+@media (max-width: 767px) {
+  .sp-none {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tb-none {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pc-none {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.ttl {
+  width: 340px;
+  font-size: 3.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.ttl .img {
+  width: 200px;
+  margin: auto;
+}
+
+#wpmem_login {
+  margin-top: 5rem;
+}
+
+#wpmem_login form fieldset {
+  padding: 0 2rem;
+}
+
+#wpmem_login form fieldset .div_text {
+  width: 100%;
+}
+
+#wpmem_login form fieldset .div_text input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  #wpmem_login form fieldset {
+    max-width: 450px;
+    margin: auto;
+  }
+}
+
+#wpmem_reg {
+  margin-top: 3rem;
+}
+
+#wpmem_reg form fieldset {
+  padding: 0 2rem;
+}
+
+#wpmem_reg form fieldset .div_text {
+  width: 100%;
+}
+
+#wpmem_reg form fieldset .div_text input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wpmem_reg form fieldset .button_div {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #wpmem_reg form fieldset {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+.entry-content {
+  padding: 0 2rem;
+}
+
+.entry-content p {
+  width: auto;
+  margin-top: 0;
+}
+
+.entry-content .pdf {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.entry-content .pdf iframe {
+  width: 320px;
+  height: 500px;
+}
+
+@media (min-width: 768px) {
+  .entry-content .pdf iframe {
+    width: 640px;
+    height: 940px;
+  }
+}
+
+.entry-content .archive {
+  margin-top: 2rem;
+}
+
+.wpmem_msg {
+  width: 100% !important;
+  padding: 20px 0 30px !important;
+}
+/*# sourceMappingURL=style.css.map */

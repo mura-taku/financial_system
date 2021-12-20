@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "mixin";
+@import "common";
+
+p {
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+}
+.ttl {
+  width: 340px;
+  font-size: 3.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+  .img {
+    width: 200px;
+    margin: auto;
+  }
+}
+#wpmem_login {
+  margin-top: 5rem;
+  form {
+    fieldset {
+      padding: 0 2rem;
+      .div_text {
+        width: 100%;
+        input {
+          box-sizing: border-box;
+        }
+      }
+      @media (min-width: 768px) {
+        max-width: 450px;
+        margin: auto;
+      }
+    }
+  }
+}
+#wpmem_reg {
+  margin-top: 3rem;
+  form {
+    fieldset {
+      padding: 0 2rem;
+      .div_text {
+        width: 100%;
+        input {
+          box-sizing: border-box;
+        }
+      }
+      .button_div {
+        width: 100%;
+      }
+      @media (min-width: 768px) {
+        max-width: 600px;
+        margin: auto;
+      }
+    }
+  }
+}
+.entry-content {
+  padding: 0 2rem;
+  p {
+    width: auto;
+    margin-top: 0;
+  }
+  .pdf {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    iframe {
+      width: 320px;
+      height: 500px;
+      @media (min-width: 768px) {
+        width: 640px;
+        height: 940px;
+      }
+    }
+  }
+  .archive {
+    margin-top: 2rem;
+  }
+}
+.wpmem_msg {
+  width: 100% !important;
+  padding: 20px 0 30px !important;
+}
